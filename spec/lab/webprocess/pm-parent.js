@@ -3,6 +3,8 @@
 import WebProcessParent from "../../../src/webprocess/WebProcessParent.js";
 import {delay} from "../../../src/utils/js-util.js";
 
+console.log(JSON.stringify(process.env));
+
 console.log("Parent: "+process.pid);
 
 let parent=new WebProcessParent({
